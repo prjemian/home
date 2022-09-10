@@ -4,7 +4,7 @@
 How I update the GitHub pages for my projects with Sphinx documentation
 =======================================================================
 
-.. caution: This page was written in 2014.
+.. caution:: This page was written in 2014.
    
    The procedure is superceded by a GitHub Actions workflow
    in the `.github/workflows/` directory of the repository.

@@ -8,6 +8,10 @@
 Welcome to Pete Jemian's GitHub home page!
 ==========================================
 
+.. note:: This page was written in 2014.
+   
+   There are updates to this content.  ...Work-in-progress...
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -30,7 +34,7 @@ Various software projects are available.
 
 
 Science
---------------------
+-------
 
     * http://prjemian.github.io/sizes: analyze small-angle scattering data for a size distribution using maximum entropy
     * http://prjemian.github.io/jldesmear: correct small-angle scattering data for slit-smearing
@@ -38,7 +42,7 @@ Science
     * https://github.com/prjemian/jlake: previous Java version of jldesmear
 
 EPICS: Control Systems
---------------------
+----------------------
 
     * http://epicsEdgeRoboArm.readthedocs.org: EPICS support for the OWI Edge Robotic Arm over USB (works on Raspberry Pi)
     * http://pvMail.readthedocs.org: Watches an EPICS PV and sends email when value changes from 0 to 1.
@@ -49,7 +53,7 @@ EPICS: Control Systems
     * http://www.aps.anl.gov/bcda/synApps/optics/fb_epid use the EPICS *epid* record for generic software feedback
 
 Utilities
---------------------
+---------
 
     * http://HDF5gateway.readthedocs.org: IgorPro R/W support for HDF5 and NeXus data files
     * http://spec2nexus.readthedocs.org: convert SPEC data files to NeXus
@@ -57,7 +61,7 @@ Utilities
     * http://pyRestTable.readthedocs.org: format a nice table in reST from Python
 
 Contributor
---------------------
+-----------
 
     * http://nexusformat.org: NeXus data standard (documentation manager)
     * http://www.cansas.org/formats/canSAS1d/1.1/doc: canSAS v1.1 data standard for 1-D small-angle scattering data
@@ -66,18 +70,19 @@ Contributor
     * https://github.com/areaDetector: EPICS area detector support
 
 Notes
---------------------
+-----
 
     * :ref:`gh-pages`
     * Some of my projects have documentation hosted at https://readthedocs.org (a.k.a. http://rtfd.org)
     * GitHub: https://github.com/prjemian
-    * this: http://prjemian.github.io
+    * this: https://prjemian.github.io
     * Ohloh: https://www.ohloh.net/accounts/Pete-R-Jemian
     * PyPI projects: https://pypi.python.org/pypi?%3Aaction=search&term=jemian&submit=search
 
 Indices and tables
 ==================
 
-* :ref:`genindex`
 .. * :ref:`modindex`
+
+* :ref:`genindex`
 * :ref:`search`

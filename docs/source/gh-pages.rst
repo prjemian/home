@@ -5,9 +5,10 @@ How I update the GitHub pages for my projects with Sphinx documentation
 =======================================================================
 
 .. caution:: This page was written in 2014.
-   
-   The procedure is superceded by a GitHub Actions workflow
-   in the `.github/workflows/` directory of the repository.
+
+   The procedure is superceded by a GitHub Actions workflow::
+
+		https://github.com/prjemian/home/blob/main/.github/workflows/publish-docs.yml
 
 :author: Pete R. Jemian
 :url:    http://prjemian.github.io
@@ -29,11 +30,11 @@ Here are the steps I follow (only slight difference from github's):
 
 .. tip::  The instructions to publish User & Organization Pages
    are shorter and simpler. [#]_
-   "Content from the ``master`` branch will be used to build 
+   "Content from the ``master`` branch will be used to build
    and publish your GitHub Pages site."
-   This means the HTML is published on the ``master`` branch, alongside 
+   This means the HTML is published on the ``master`` branch, alongside
    any source code such as ``.rst``) for the page(s).
-   
+
    For a Sphinx build, these are the steps I use to publish the user docs page::
 
      make clean html
@@ -41,9 +42,9 @@ Here are the steps I follow (only slight difference from github's):
      tar cf - . | (cd ../.. && tar xf -)
      popd
      git add .
-   
+
    and then push to the ``origin master``.
-  
+
    .. [#] `User & Org Pages <https://help.github.com/articles/user-organization-and-project-pages#user--organization-pages>`_
 
 build the Sphinx docs in the project locally
@@ -53,17 +54,17 @@ for my projects, the docs are in the "docs" subdirectory::
 	$ cd docs
 	$ make clean
 
-Before proceeding to build the html pages, it is useful to make a 
-modification [#]_ to the Sphinx Makefile so that GitHub 
-pages will not try to render the pages using jekyll.  Without this, 
-the Sphinx document theme will not be able to make the pages look 
-right.  With this modification in place, proceed to build the html 
+Before proceeding to build the html pages, it is useful to make a
+modification [#]_ to the Sphinx Makefile so that GitHub
+pages will not try to render the pages using jekyll.  Without this,
+the Sphinx document theme will not be able to make the pages look
+right.  With this modification in place, proceed to build the html
 documentation::
 
 	$ make html
 
 .. [#] add ``.nojekyll`` file to HTML directory root
-   (`example <https://github.com/prjemian/prjemian.github.io/commit/4b2bddc61a6e294ae8df2b094e6966e4b899d8d6>`_) 
+   (`example <https://github.com/prjemian/prjemian.github.io/commit/4b2bddc61a6e294ae8df2b094e6966e4b899d8d6>`_)
 
 copy the *html* directory contents somewhere else
 -------------------------------------------------
@@ -85,8 +86,8 @@ with the special command::
     $ git checkout --orphan gh-pages
 	Switched to a new branch 'gh-pages'
 
-You only need to do this once per project.  
-Check https://github.com/prjemian/cmd_response [#]_ under branches and 
+You only need to do this once per project.
+Check https://github.com/prjemian/cmd_response [#]_ under branches and
 it will tell you if such a branch exists.  For *cmd_response*, that exists.
 If the *gh-pages* branch exists, just use this command::
 
@@ -95,7 +96,7 @@ If the *gh-pages* branch exists, just use this command::
 
 .. [#] the general pattern for the project URL is:
    https://github.com/<username>/<projectname>
-   
+
    The docs will be published to:
    http://<username>.github.io/<projectname>
 
@@ -119,12 +120,12 @@ the documentation branch::
 	rm '.nojekyll'
 	rm '_modules/index.html'
 	...
-	
+
 All that should remain is the *.git* directory.  Don't delete that!
 
 At this point, there may remain some other files and directories that
 were not in git version control.  These need to be deleted directly
-(not with git but with normal delete commands).  Check for them.  
+(not with git but with normal delete commands).  Check for them.
 Likely ones include docs, dist, build, perhaps others.  For me::
 
 	$ ls -lAFg
@@ -161,7 +162,7 @@ The changes are not published until you push the changeset back to github::
     $ git push origin gh-pages
 
 and enter credentials as requested.  Your documentation should
-appear at http://prjemian.github.io/cmd_response right away if they 
+appear at http://prjemian.github.io/cmd_response right away if they
 have already been posted before.  For a brand new project, it might
 take up to 10 minutes.
 

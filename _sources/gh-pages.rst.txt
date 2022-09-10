@@ -8,7 +8,11 @@ How I update the GitHub pages for my projects with Sphinx documentation
 
    The procedure is superceded by a GitHub Actions workflow::
 
-		https://github.com/prjemian/home/blob/main/.github/workflows/publish-docs.yml
+      https://github.com/prjemian/home/blob/main/.github/workflows/publish-docs.yml
+
+   See the procedure I use to build with Sphinx now
+   and publish to GitHub Pages:
+   https://github.com/prjemian/docs_demo#readme.
 
 :author: Pete R. Jemian
 :url:    http://prjemian.github.io
@@ -17,7 +21,20 @@ How I update the GitHub pages for my projects with Sphinx documentation
 :see:  https://help.github.com/articles/creating-project-pages-manually
 
 
-Here are the steps I follow (only slight difference from github's):
+.. sidebar::  *Much* simpler with an automated GitHub Actions workflow!
+
+	* edit the content in `docs/source`
+	* (optional) build locally to confirm your edits
+	* commit and push to GitHub
+	* workflow does the rest to publish
+
+	..
+		* The ``actions/setup-python@v2`` workflow installs Python into the virtual machine on GitHub.  https://github.com/actions/setup-python
+		* The ``actions/checkout@master`` workflow installs the repository in the VM.  https://github.com/actions/checkout
+		* The ``sphinx-notes/pages@v2`` workflow handles steps 1-6 (below).  https://github.com/sphinx-notes/pages
+		* The ``ad-m/github-push-action@master`` workflow handles steps 7-8. https://github.com/ad-m/github-push-action
+
+Here are the steps I follow (only slight difference from GitHub's):
 
 1. build the Sphinx docs in the project locally
 2. copy the *html* directory contents somewhere else

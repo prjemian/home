@@ -42,6 +42,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">prjemian</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/.</span><span class="n">github</span><span class="o">/</span><span class="n">workflows</span><span class="o">/</span><span class="n">publish</span><span class="o">-</span><span class="n">docs</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
 </div>
+<p>See the procedure I use to build with Sphinx now
+and publish to GitHub Pages:
+<a class="reference external" href="https://github.com/prjemian/docs_demo#readme">https://github.com/prjemian/docs_demo#readme</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">author<span class="colon">:</span></dt>
@@ -57,7 +60,16 @@
 <dd class="field-even"><p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">https://help.github.com/articles/creating-project-pages-manually</a></p>
 </dd>
 </dl>
-<p>Here are the steps I follow (only slight difference from github’s):</p>
+<aside class="sidebar">
+<p class="sidebar-title"><em>Much</em> simpler with an automated GitHub Actions workflow!</p>
+<ul class="simple">
+<li><p>edit the content in <cite>docs/source</cite></p></li>
+<li><p>(optional) build locally to confirm your edits</p></li>
+<li><p>commit and push to GitHub</p></li>
+<li><p>workflow does the rest to publish</p></li>
+</ul>
+</aside>
+<p>Here are the steps I follow (only slight difference from GitHub’s):</p>
 <ol class="arabic simple">
 <li><p>build the Sphinx docs in the project locally</p></li>
 <li><p>copy the <em>html</em> directory contents somewhere else</p></li>

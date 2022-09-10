@@ -39,7 +39,8 @@ EPICS: Control Systems
     * http://pvMail.readthedocs.org: Watches an EPICS PV and sends email when value changes from 0 to 1.
     * http://pvWebMonitor.readthedocs.org: post EPICS PVs to read-only (static) web page(s)
     * https://cmd-response.readthedocs.io/en/latest/epics/rpi_epics.html: (2020 edition) Install EPICS on the Raspberry Pi
-    * http://prjemian.github.io/epicspi: (2014 edition) Install EPICS on the Raspberry Pi
+        * http://prjemian.github.io/epicspi: (2014 edition)
+
     * http://prjemian.github.io/cmd_response: Arduino as I/O for EPICS (such as on Raspberry Pi)
     * http://bcdaqwidgets.readthedocs.org: BcdaQWidgets: PyEpics-aware PySide widgets for the APS
     * http://www.aps.anl.gov/bcda/synApps/optics/fb_epid use the EPICS *epid* record for generic software feedback

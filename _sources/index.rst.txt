@@ -9,7 +9,7 @@ Welcome to Pete Jemian's GitHub home page!
 ==========================================
 
 .. note:: This page was written in 2014.
-   
+
    There are updates to this content.  ...Work-in-progress...
 
 .. toctree::
@@ -21,17 +21,8 @@ Various software projects are available.
 
   .. toctree::
      :hidden:
-     
+
      gh-pages
-
-..
-  Indices and tables
-  ==================
-
-  * :ref:`genindex`
-  * :ref:`modindex`
-  * :ref:`search`
-
 
 Science
 -------
@@ -47,7 +38,8 @@ EPICS: Control Systems
     * http://epicsEdgeRoboArm.readthedocs.org: EPICS support for the OWI Edge Robotic Arm over USB (works on Raspberry Pi)
     * http://pvMail.readthedocs.org: Watches an EPICS PV and sends email when value changes from 0 to 1.
     * http://pvWebMonitor.readthedocs.org: post EPICS PVs to read-only (static) web page(s)
-    * http://prjemian.github.io/epicspi: Install EPICS on the Raspberry Pi
+    * https://cmd-response.readthedocs.io/en/latest/epics/rpi_epics.html: (2020 edition) Install EPICS on the Raspberry Pi
+    * http://prjemian.github.io/epicspi: (2014 edition) Install EPICS on the Raspberry Pi
     * http://prjemian.github.io/cmd_response: Arduino as I/O for EPICS (such as on Raspberry Pi)
     * http://bcdaqwidgets.readthedocs.org: BcdaQWidgets: PyEpics-aware PySide widgets for the APS
     * http://www.aps.anl.gov/bcda/synApps/optics/fb_epid use the EPICS *epid* record for generic software feedback
@@ -82,5 +74,6 @@ Notes
 -----------
 
 * published: |today|
-* :ref:`genindex`
-* :ref:`search`
+
+.. * :ref:`genindex`
+.. * :ref:`search`

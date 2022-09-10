@@ -75,14 +75,12 @@ Notes
     * :ref:`gh-pages`
     * Some of my projects have documentation hosted at https://readthedocs.org (a.k.a. http://rtfd.org)
     * GitHub: https://github.com/prjemian
-    * this: https://prjemian.github.io
+    * this: https://prjemian.github.io/home_page
     * Ohloh: https://www.ohloh.net/accounts/Pete-R-Jemian
     * PyPI projects: https://pypi.python.org/pypi?%3Aaction=search&term=jemian&submit=search
 
-Indices and tables
-==================
+-----------
 
-.. * :ref:`modindex`
-
+* published: |today|
 * :ref:`genindex`
 * :ref:`search`
